@@ -1,0 +1,14 @@
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/book-management/CMakeFiles/book-management.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/book-management/CMakeFiles/edit_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/book-management/CMakeFiles/rebuild_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/user-management/CMakeFiles/user-management.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/user-management/CMakeFiles/edit_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/user-management/CMakeFiles/rebuild_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/aggregator/CMakeFiles/aggregator.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/aggregator/CMakeFiles/edit_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/aggregator/CMakeFiles/rebuild_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/api-gateway/CMakeFiles/api-gateway.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/api-gateway/CMakeFiles/edit_cache.dir
+/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug/api-gateway/CMakeFiles/rebuild_cache.dir

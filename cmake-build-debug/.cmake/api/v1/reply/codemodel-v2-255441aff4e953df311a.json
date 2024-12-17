@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "book-management",
+					"jsonFile" : "directory-book-management-Debug-f7bccce4635d74beadd1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "book-management",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "user-management",
+					"jsonFile" : "directory-user-management-Debug-b789ea631e3e6a12c594.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "user-management",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "aggregator",
+					"jsonFile" : "directory-aggregator-Debug-3232669e4dcdd4878297.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "aggregator",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "api-gateway",
+					"jsonFile" : "directory-api-gateway-Debug-79c82b87f7caf1887972.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "api-gateway",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LibraryManagementSystem"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "book-management",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "user-management",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "aggregator",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "api-gateway",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "aggregator::@09214ba384adb04f9bef",
+					"jsonFile" : "target-aggregator-Debug-4615f9b1052a9d833380.json",
+					"name" : "aggregator",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "api-gateway::@35f7b3107de7758346b5",
+					"jsonFile" : "target-api-gateway-Debug-3ce85e349c9a18b47fb6.json",
+					"name" : "api-gateway",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "book-management::@a849bf74070a9bb1e44e",
+					"jsonFile" : "target-book-management-Debug-a8ed87cd6ddcc4e9acf1.json",
+					"name" : "book-management",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "user-management::@a1fa1b023215c04783db",
+					"jsonFile" : "target-user-management-Debug-ea0d14bc74ba859c6944.json",
+					"name" : "user-management",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug",
+		"source" : "/home/elif/CLionProjects/LibraryManagementSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

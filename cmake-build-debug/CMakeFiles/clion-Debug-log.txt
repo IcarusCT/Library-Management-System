@@ -1,0 +1,67 @@
+/snap/clion/308/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/308/bin/ninja/linux/x64/ninja -DCMAKE_TOOLCHAIN_FILE=/home/elif/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /home/elif/CLionProjects/LibraryManagementSystem -B /home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+All requested packages are currently installed.
+Total install time: 189 ns
+openssl is compatible with built-in CMake targets:
+
+  find_package(OpenSSL REQUIRED)
+  target_link_libraries(main PRIVATE OpenSSL::SSL)
+  target_link_libraries(main PRIVATE OpenSSL::Crypto)
+
+amqpcpp provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(amqpcpp CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE amqpcpp)
+
+amqpcpp provides pkg-config modules:
+
+  # AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker
+  amqpcpp
+
+crow provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Crow CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Crow::Crow asio::asio)
+
+libbson provides CMake targets:
+
+    find_package(bson-1.0 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE $<IF:$<TARGET_EXISTS:mongo::bson_static>,mongo::bson_static,mongo::bson_shared>)
+
+The package zlib is compatible with built-in CMake targets:
+
+    find_package(ZLIB REQUIRED)
+    target_link_libraries(main PRIVATE ZLIB::ZLIB)
+
+utf8proc provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(unofficial-utf8proc CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE utf8proc)
+
+utf8proc provides pkg-config modules:
+
+  # UTF8 processing
+  libutf8proc
+
+mongo-c-driver provides CMake targets:
+
+  find_package(mongoc-1.0 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE $<IF:$<TARGET_EXISTS:mongo::mongoc_shared>,mongo::mongoc_shared,mongo::mongoc_static>)
+
+mongo-cxx-driver provides CMake targets:
+
+    find_package(bsoncxx CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE $<IF:$<TARGET_EXISTS:mongo::bsoncxx_static>,mongo::bsoncxx_static,mongo::bsoncxx_shared>)
+
+    find_package(mongocxx CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE $<IF:$<TARGET_EXISTS:mongo::mongocxx_static>,mongo::mongocxx_static,mongo::mongocxx_shared>)
+
+-- Running vcpkg install - done
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/elif/CLionProjects/LibraryManagementSystem/cmake-build-debug

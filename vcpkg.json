@@ -1,0 +1,39 @@
+{
+  "name" : "librarymanagementsystem",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "96b5ced82828ecaf67e6010a892c98d3e96ed1c2",
+  "dependencies" : [ {
+    "name" : "libbson",
+    "version>=" : "1.29.0"
+  }, {
+    "name" : "mongo-c-driver",
+    "version>=" : "1.29.0"
+  }, {
+    "name" : "mongo-cxx-driver",
+    "version>=" : "3.11.0"
+  }, {
+    "name" : "openssl",
+    "version>=" : "3.4.0"
+  }, {
+    "name" : "utf8proc",
+    "version>=" : "2.9.0"
+  }, {
+    "name" : "vcpkg-cmake-config",
+    "version>=" : "2024-05-23"
+  }, {
+    "name" : "vcpkg-cmake-get-vars",
+    "version>=" : "2024-09-22"
+  }, {
+    "name" : "vcpkg-cmake",
+    "version>=" : "2024-04-23"
+  }, {
+    "name" : "zlib",
+    "version>=" : "1.3.1"
+  }, {
+    "name" : "crow",
+    "version>=" : "1.2.0"
+  }, {
+    "name" : "amqpcpp",
+    "version>=" : "4.3.26"
+  } ]
+}

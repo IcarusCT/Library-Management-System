@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/amqpcpp-x64-linux-4.3.26-fe9e2ea8-8035-4203-b587-c12565951f46",
+  "name": "amqpcpp:x64-linux@4.3.26 a0ea9441e27e99ba4b03be28fcffbcc7ebfe78477d3bc976eb33fef0a01ca944",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-11-12-eb492805e92a2c14a230f5c3deb3e89f6771c321"
+    ],
+    "created": "2024-12-15T20:31:19Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "amqpcpp",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "4.3.26",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@bebd378cad1feeea8bf45184a105efb18bb59354",
+      "homepage": "https://github.com/CopernicaMarketingSoftware/AMQP-CPP",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "amqpcpp:x64-linux",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "a0ea9441e27e99ba4b03be28fcffbcc7ebfe78477d3bc976eb33fef0a01ca944",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "CopernicaMarketingSoftware/AMQP-CPP",
+      "downloadLocation": "git+https://github.com/CopernicaMarketingSoftware/AMQP-CPP@v4.3.26",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0fb280bfea6dc665d44efa7321a4b69c130a5f0b10be7ada7909e00ec8a3ca0b98125bd96475386f1b3627bac9f8e5c9bbd71b462868b46919737da32e021cb4"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//home/elif/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/vcpkg.json",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "18c05e3740a030a436076aa8675ccaddc1a46bdb7b0f5006507639b4657f6bda"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/elif/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/find-openssl.patch",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11c168d24c4af5b52214b8a7d2630fb32c7a2520b64ee965780bf542e1d1ea4c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/elif/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/portfile.cmake",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "44dc78966a74190429d823b796f63688928bfd3fe68c6b0ca235579cb0e039c0"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/elif/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/fix-max_min_macros.patch",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f104850425a004891fd6e696220f2f97f9d6095913840038396bf0b49e18946"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}
