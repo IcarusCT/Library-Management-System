@@ -20,8 +20,8 @@ class Book {
     Book(const std::string &title, const std::string &author)
         : title(title), author(author) {}
 
-    /*
-    BSON_DEFINE_FROM_BSON(Book, _id, title, author)
+
+    /*BSON_DEFINE_FROM_BSON(Book, _id, title, author)
     BSON_DEFINE_TO_BSON(Book, _id, title, author)*/
 
     BSON_DEFINE_TYPE(Book, _id, title, author)

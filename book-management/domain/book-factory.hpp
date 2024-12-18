@@ -26,9 +26,7 @@ public:
     static std::vector<Book> createListFromDB(mongocxx::cursor &cursor) {
         std::vector<Book> books;
         for (const auto& doc : cursor) {
-            Book book;
-            Book::fromBSON(doc);
-            books.push_back(book);
+            books.emplace_back(Book::fromBSON(doc));
         }
 
         return books;

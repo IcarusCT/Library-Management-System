@@ -47,7 +47,7 @@ public:
         std::cout << "Starting API Gateway..." << std::endl;
 
         std::thread rabbitThread([this]() {
-            listenToRequests();
+            listenToAggregatorResponses();
         });
 
         std::thread rabbitStartThread([this]() {
@@ -62,7 +62,7 @@ public:
         crowServerThread.join();
     }
 
-    void listenToRequests() {
+    void listenToAggregatorResponses() {
         auto &eventHub = EventHub::getInstance();
 
         rabbitMQ.consume("aggregator_queue", [&](const std::string_view &body, uint64_t deliveryTag, bool redelivered) {

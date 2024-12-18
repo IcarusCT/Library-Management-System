@@ -30,22 +30,37 @@ int main() {
         }
     });
 
-    rabbitMQ.consume("ListBooks", [&](const std::string_view &body, uint64_t deliveryTag, bool redelivered) {
+    rabbitMQ.consume("ListBooksRequest", [&](const std::string_view &body, uint64_t deliveryTag, bool redelivered) {
         try {
             std::cout << "[ListBooks] Received request: " << body << std::endl;
+
             auto jsonMessage = nlohmann::json::parse(body);
 
             if (jsonMessage.contains("action") && jsonMessage["action"] == "list-books") {
                 std::cout << "[ListBooks] Action: list-books" << std::endl;
-                bookManagementService.GetAllBooks();
 
+                auto books = bookManagementService.GetAllBooks();
+
+                nlohmann::json booksJson = nlohmann::json::array();
+                for (const auto &book: books) {
+                    nlohmann::json bookJson;
+                    bookJson["title"] = book.title;
+                    bookJson["author"] = book.author;
+                    booksJson.push_back(bookJson);
+                }
                 nlohmann::json responseJson;
+                responseJson["action"] = "list-books";
+                responseJson["paylaod"] = booksJson;
                 responseJson["status"] = "success";
+
                 RabbitMQAdapter::getInstance().sendMessage("ListBooksResponse", responseJson.dump());
-                std::cout << "[ListBooks] Response sent successfully" << std::endl;
+                std::cout << "[Microservice] Response sent to Aggregator: " << responseJson.dump() << std::endl;
+
+
                 RabbitMQAdapter::getInstance().ack(deliveryTag);
             } else {
-                std::cerr << "[ListBooks] Invalid action received or missing action key" << std::endl;
+                std::cerr << "[ListBooks] Invalid action received or missing action key in message: " << body <<
+                        std::endl;
                 RabbitMQAdapter::getInstance().ack(deliveryTag);
             }
         } catch (const std::exception &e) {

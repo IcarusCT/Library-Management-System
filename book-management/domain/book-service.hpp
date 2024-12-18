@@ -19,7 +19,8 @@ public:
     }
 
     std::vector<Book> getAllBooks() {
-        bookRepository.listAllBooks();
+        auto cursor = bookRepository.listAllBooks();
+        return cursor;
     }
 
 private:
