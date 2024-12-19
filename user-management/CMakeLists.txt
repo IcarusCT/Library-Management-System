@@ -12,6 +12,7 @@ add_executable(
         domain/user-repository.hpp
         main.cpp
         user-dto/user-dto-assembler.hpp
+        user-dto/request/add-user-request.hpp
 
 
 )

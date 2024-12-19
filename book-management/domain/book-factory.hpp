@@ -5,10 +5,8 @@
 #ifndef BOOK_FACTORY_HPP
 #define BOOK_FACTORY_HPP
 #include "book.hpp"
-#include "../libs/cpp-bson-convert.hpp"
 #include <bsoncxx/v_noabi/bsoncxx/document/view.hpp>
 #include <bsoncxx/v_noabi/bsoncxx/document/value.hpp>
-#include <bsoncxx/v_noabi/bsoncxx/builder/basic/document.hpp>
 
 class BookFactory {
 public:

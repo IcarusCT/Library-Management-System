@@ -113,7 +113,8 @@
 				2,
 				3,
 				4,
-				6
+				6,
+				7
 			]
 		},
 		{
@@ -160,6 +161,11 @@
 		{
 			"backtrace" : 2,
 			"path" : "user-management/user-dto/user-dto-assembler.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "user-management/user-dto/request/add-user-request.hpp",
 			"sourceGroupIndex" : 0
 		}
 	],
